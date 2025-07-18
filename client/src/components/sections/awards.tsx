@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Trophy } from "lucide-react";
 
 export default function Awards() {
   const awards = [
@@ -24,10 +23,7 @@ export default function Awards() {
         {awards.map((award, index) => (
           <Card key={index} className="shadow-md">
             <CardContent className="p-6">
-              <div className="flex items-center space-x-4">
-                <div className="bg-yellow-100 dark:bg-yellow-900/30 p-3 rounded-full">
-                  <Trophy className="text-yellow-600 dark:text-yellow-400 w-6 h-6" />
-                </div>
+              <div className="flex items-center">
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{award.title}</h3>
