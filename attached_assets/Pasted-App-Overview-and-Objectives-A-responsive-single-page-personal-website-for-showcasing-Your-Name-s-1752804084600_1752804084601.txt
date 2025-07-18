@@ -1,0 +1,78 @@
+App Overview and Objectives
+
+A responsive, single-page personal website for showcasing [Your Name]’s background, academic focus, projects, and contact information. The goal is to support research and career development opportunities by presenting a clean, engaging profile with interactive features like an AI chatbot and day/night mode.
+
+Target Audience
+	•	Recruiters and hiring managers in research or data-related fields
+	•	Professors, collaborators, and academic peers
+	•	Visitors interested in [Your Name]’s research and projects
+
+Core Features and Functionality
+	•	Fixed Top Navigation Bar for smooth section jumps
+	•	Left Sidebar (Fixed) with:
+	•	Profile Photo
+	•	Name, School, Location
+	•	Contact Info: Email, LinkedIn, Instagram, GitHub (all with links)
+	•	Slogan: “Tomorrow is another day.” (at the bottom)
+	•	Right Scrollable Content including:
+	1.	Introduction paragraph (no title)
+	2.	Highlighted Research Focus (block format)
+	3.	Resume invitation with download link
+	4.	Educations section
+	5.	Experience section
+	6.	Projects section
+	7.	Skills section
+	8.	Get In Touch section
+	•	Floating AI Chatbot to answer open-ended questions about background, projects, education
+	•	Light/Dark Mode Toggle
+
+High-Level Technical Stack Recommendations
+	•	Frontend: HTML/CSS/JavaScript or modern framework like React (via Replit)
+	•	Chatbot: OpenAI API integration for conversational capabilities
+	•	Deployment: GitHub Pages for hosting
+	•	Theme Switching: CSS variables with toggle control for day/night mode
+	•	SEO & Metadata: Open Graph tags, meta descriptions, sitemap
+
+Conceptual Data Model
+	•	Profile: name, photo, school, location, contact links, slogan
+	•	Introduction: single paragraph (text)
+	•	Research Focus: list or block of key interests
+	•	Resume: file with link
+	•	Educations: list of schools, degrees, dates
+	•	Experience: roles, institutions, periods, descriptions
+	•	Projects: name, description, links or demos
+	•	Skills: categorized skill tags (e.g., tools, languages)
+	•	Contact: email or contact form (optional static form)
+
+User Interface Design Principles
+	•	Clean, modern, minimalist aesthetic
+	•	Responsive layout for desktop and mobile
+	•	Smooth navigation with section anchors
+	•	Clear typographic hierarchy
+	•	Left sidebar always visible for personality and identity emphasis
+	•	Slogan presented subtly in the sidebar bottom
+
+Security Considerations
+	•	Email obfuscation or form-based contact to prevent scraping
+	•	No sensitive data exposed publicly
+	•	Minimal external dependencies to avoid vulnerabilities
+
+Development Phases or Milestones
+	1.	Layout Skeleton: Fixed sidebar, top nav, scrollable right content
+	2.	Content Sections: Build out each main section with placeholder content
+	3.	Chatbot Integration: Add floating AI assistant via OpenAI API
+	4.	Resume Upload: Add downloadable resume link
+	5.	Theme Toggle: Implement light/dark mode switch
+	6.	Testing & Refinement: Browser compatibility, responsiveness, accessibility
+	7.	Deployment: Push to GitHub and enable GitHub Pages
+
+Potential Challenges and Solutions
+	•	Keeping AI bot relevant: Use well-written context data or FAQs
+	•	Responsiveness of sidebar layout: Test and adjust breakpoints across devices
+	•	Resume link maintenance: Use relative linking or GitHub asset hosting
+
+Future Expansion Possibilities
+	•	Blog or writing samples section
+	•	Newsletter or contact form backend
+	•	Video or media portfolio section
+	•	Add animation or scroll effects for visual engagement
