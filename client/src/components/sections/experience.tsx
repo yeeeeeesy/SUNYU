@@ -45,8 +45,8 @@ export default function Experience() {
                   {exp.team && <p className="text-slate-600 dark:text-slate-400 text-sm">{exp.team}</p>}
                 </div>
                 <Badge 
-                  variant={exp.status === 'current' ? 'default' : 'secondary'}
-                  className={exp.status === 'current' ? 'bg-primary/10 text-primary' : 'bg-accent/10 text-accent'}
+                  variant="secondary"
+                  className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300"
                 >
                   {exp.period}
                 </Badge>

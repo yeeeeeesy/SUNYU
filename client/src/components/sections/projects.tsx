@@ -39,7 +39,7 @@ export default function Projects() {
               </div>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, techIndex) => (
-                  <Badge key={techIndex} variant="secondary" className="bg-primary/10 text-primary">
+                  <Badge key={techIndex} variant="secondary" className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
                     {tech}
                   </Badge>
                 ))}
