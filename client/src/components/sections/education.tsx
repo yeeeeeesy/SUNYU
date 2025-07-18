@@ -6,7 +6,17 @@ export default function Education() {
       institution: "Zhejiang University",
       degree: "Bachelor of Arts - Economics",
       period: "2023 - 2027",
-      status: "current"
+      status: "current",
+      coreCourses: [
+        "Game Theory", "Industrial Organization Theory", "Macroeconomics (A)", "Econometrics", 
+        "Selected Readings in Economic Literature and Academic Writing", "Time Series Analysis", 
+        "Mathematical Economics", "Mathematical Statistics", "Microeconomics (A)", "Behavioral Economics", 
+        "Political Economy", "Intermediate Macroeconomics", "Intermediate Econometrics", "Intermediate Microeconomics"
+      ],
+      minorCourses: [
+        "Mathematical Analysis", "Advanced Algebra and Analytic Geometry", "Ordinary Differential Equations", 
+        "Complex Analysis", "Real Analysis", "Stochastic Processes", "Probability Theory"
+      ]
     },
     {
       institution: "University of California, Berkeley",
@@ -47,6 +57,42 @@ export default function Education() {
                     >
                       {edu.period}
                     </Badge>
+                    
+                    {/* Core Courses */}
+                    {edu.coreCourses && (
+                      <div className="mt-4">
+                        <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Core Courses</h4>
+                        <div className="flex flex-wrap gap-1">
+                          {edu.coreCourses.map((course, courseIndex) => (
+                            <Badge 
+                              key={courseIndex}
+                              variant="outline"
+                              className="text-xs bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-700"
+                            >
+                              {course}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Minor Courses */}
+                    {edu.minorCourses && (
+                      <div className="mt-4">
+                        <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Minor Courses</h4>
+                        <div className="flex flex-wrap gap-1">
+                          {edu.minorCourses.map((course, courseIndex) => (
+                            <Badge 
+                              key={courseIndex}
+                              variant="outline"
+                              className="text-xs bg-slate-50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-600"
+                            >
+                              {course}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
