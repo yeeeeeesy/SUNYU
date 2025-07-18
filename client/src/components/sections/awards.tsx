@@ -29,8 +29,11 @@ export default function Awards() {
                   <Trophy className="text-yellow-600 dark:text-yellow-400 w-6 h-6" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{award.title}</h3>
-                  <p className="text-primary font-medium">{award.prize} - {award.year}</p>
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{award.title}</h3>
+                    <span className="text-sm text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">{award.year}</span>
+                  </div>
+                  <p className="text-primary font-medium mb-1">{award.prize}</p>
                   <p className="text-slate-600 dark:text-slate-400 text-sm">{award.description}</p>
                 </div>
               </div>
