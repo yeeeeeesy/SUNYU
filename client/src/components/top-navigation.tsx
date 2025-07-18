@@ -21,10 +21,19 @@ export default function TopNavigation() {
   const scrollToChatbot = () => {
     const chatbot = document.querySelector('.floating-chatbot');
     if (chatbot) {
+      // First scroll to chatbot
       chatbot.scrollIntoView({ 
         behavior: 'smooth',
         block: 'center'
       });
+      
+      // Then trigger click to open it
+      setTimeout(() => {
+        const chatButton = chatbot.querySelector('button');
+        if (chatButton) {
+          chatButton.click();
+        }
+      }, 500);
     }
   };
 
