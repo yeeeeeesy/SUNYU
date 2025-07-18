@@ -54,7 +54,7 @@ export default function Experience() {
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, achIndex) => (
                   <li key={achIndex} className="flex items-start text-slate-700 dark:text-slate-300">
-                    <CheckCircle className="text-green-500 mr-2 mt-1 w-4 h-4 flex-shrink-0" />
+                    <CheckCircle className="text-primary mr-2 mt-1 w-4 h-4 flex-shrink-0" />
                     <span className="text-sm">{achievement}</span>
                   </li>
                 ))}

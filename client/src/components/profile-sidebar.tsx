@@ -1,4 +1,5 @@
-import { Mail, MapPin, ExternalLink } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import profileImage from "@assets/1_1752804095028.jpg";
 
 export default function ProfileSidebar() {
@@ -41,7 +42,7 @@ export default function ProfileSidebar() {
             rel="noopener noreferrer"
             className="flex items-center p-3 rounded-lg bg-slate-50 dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 transition-colors group"
           >
-            <ExternalLink className="text-primary mr-3 w-5 h-5" />
+            <FaLinkedin className="text-primary mr-3 w-5 h-5" />
             <span className="text-sm group-hover:text-primary transition-colors">LinkedIn Profile</span>
           </a>
           
@@ -51,7 +52,7 @@ export default function ProfileSidebar() {
             rel="noopener noreferrer"
             className="flex items-center p-3 rounded-lg bg-slate-50 dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 transition-colors group"
           >
-            <ExternalLink className="text-primary mr-3 w-5 h-5" />
+            <FaGithub className="text-primary mr-3 w-5 h-5" />
             <span className="text-sm group-hover:text-primary transition-colors">GitHub</span>
           </a>
           
@@ -61,7 +62,7 @@ export default function ProfileSidebar() {
             rel="noopener noreferrer"
             className="flex items-center p-3 rounded-lg bg-slate-50 dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 transition-colors group"
           >
-            <ExternalLink className="text-primary mr-3 w-5 h-5" />
+            <FaInstagram className="text-primary mr-3 w-5 h-5" />
             <span className="text-sm group-hover:text-primary transition-colors">Instagram</span>
           </a>
         </div>
