@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight } from "lucide-react";
 
 export default function Projects() {
   const projects = [
@@ -37,16 +36,13 @@ export default function Projects() {
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">{project.title}</h3>
                 <p className="text-slate-600 dark:text-slate-400">{project.description}</p>
               </div>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (
                   <Badge key={techIndex} variant="secondary" className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
                     {tech}
                   </Badge>
                 ))}
               </div>
-              <button className="text-primary hover:text-secondary font-medium transition-colors flex items-center">
-                View Details <ArrowRight className="ml-1 w-4 h-4" />
-              </button>
             </CardContent>
           </Card>
         ))}
