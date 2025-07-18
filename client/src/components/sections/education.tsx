@@ -32,8 +32,8 @@ export default function Education() {
             <CardContent className="p-6">
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary">{edu.institution}</h3>
-                  <p className="text-slate-900 dark:text-white font-medium">{edu.degree}</p>
+                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{edu.institution}</h3>
+                  <p className="text-primary font-medium">{edu.degree}</p>
                 </div>
                 <Badge 
                   variant="secondary"
