@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -16,6 +16,16 @@ export default function TopNavigation() {
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  const scrollToChatbot = () => {
+    const chatbot = document.querySelector('.floating-chatbot');
+    if (chatbot) {
+      chatbot.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }
   };
 
   return (
@@ -40,16 +50,38 @@ export default function TopNavigation() {
           </div>
         )}
         
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={toggleTheme}
-          className="bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600"
-        >
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
-        </Button>
+        <div className="flex items-center space-x-3">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={scrollToChatbot}
+            className="bg-primary/10 hover:bg-primary/20 text-primary border-primary/20 hover:border-primary/30 hidden sm:flex items-center space-x-2"
+          >
+            <MessageCircle className="h-4 w-4" />
+            <span className="text-sm">AI Chat</span>
+          </Button>
+          
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={scrollToChatbot}
+            className="bg-primary/10 hover:bg-primary/20 text-primary border-primary/20 hover:border-primary/30 sm:hidden"
+          >
+            <MessageCircle className="h-[1.2rem] w-[1.2rem]" />
+            <span className="sr-only">Open AI Chat</span>
+          </Button>
+          
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={toggleTheme}
+            className="bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600"
+          >
+            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <span className="sr-only">Toggle theme</span>
+          </Button>
+        </div>
       </div>
     </nav>
   );
