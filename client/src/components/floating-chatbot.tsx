@@ -77,7 +77,7 @@ export default function FloatingChatbot() {
     <div className="fixed bottom-6 right-6 z-50">
       <Button
         onClick={() => setIsOpen(!isOpen)}
-        className="floating-chat bg-primary hover:bg-secondary text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+        className="bg-primary hover:bg-secondary text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
         size="icon"
       >
         <MessageCircle className="w-6 h-6" />
