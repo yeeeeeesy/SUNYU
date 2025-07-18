@@ -4,20 +4,20 @@ import { Badge } from "@/components/ui/badge";
 export default function Education() {
   const education = [
     {
-      degree: "Bachelor of Arts - Economics",
       institution: "Zhejiang University",
+      degree: "Bachelor of Arts - Economics",
       period: "2023 - 2027",
       status: "current"
     },
     {
-      degree: "Digital Transformation, Data and Decision",
       institution: "University of California, Berkeley",
+      degree: "Digital Transformation, Data and Decision (Summer Session)",
       period: "July - August 2025",
       status: "program"
     },
     {
-      degree: "Sustainable Finance",
       institution: "Nanyang Technological University Singapore",
+      degree: "Sustainable Finance (Summer Program)",
       period: "July 2024",
       status: "completed"
     }
@@ -32,12 +32,12 @@ export default function Education() {
             <CardContent className="p-6">
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{edu.degree}</h3>
-                  <p className="text-primary font-medium">{edu.institution}</p>
+                  <h3 className="text-xl font-semibold text-primary">{edu.institution}</h3>
+                  <p className="text-slate-900 dark:text-white font-medium">{edu.degree}</p>
                 </div>
                 <Badge 
-                  variant={edu.status === 'current' ? 'default' : 'secondary'}
-                  className={edu.status === 'current' ? 'bg-primary/10 text-primary' : 'bg-accent/10 text-accent'}
+                  variant="secondary"
+                  className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300"
                 >
                   {edu.period}
                 </Badge>

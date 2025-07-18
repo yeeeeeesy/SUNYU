@@ -46,7 +46,7 @@ export default function ProfileSidebar() {
           </a>
           
           <a 
-            href="https://github.com/sunyu-ye" 
+            href="https://github.com/yeeeeeesy" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center p-3 rounded-lg bg-slate-50 dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 transition-colors group"
@@ -56,7 +56,7 @@ export default function ProfileSidebar() {
           </a>
           
           <a 
-            href="https://instagram.com/sunyu.ye" 
+            href="https://www.instagram.com/ysy200501?igsh=MTNibnJxNXN6eTV3eg%3D%3D&utm_source=qr" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center p-3 rounded-lg bg-slate-50 dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 transition-colors group"
