@@ -76,7 +76,7 @@ export default function Skills() {
             </h3>
             <div className="flex flex-wrap gap-2">
               {technicalTools.map((tool, index) => (
-                <Badge key={index} variant="secondary" className="bg-primary/10 text-primary">
+                <Badge key={index} variant="secondary" className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
                   {tool}
                 </Badge>
               ))}
