@@ -13,7 +13,7 @@ export default function Awards() {
             </div>
             <div className="flex-1">
               <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Mathematical Contest in Modeling</h3>
-              <p className="text-primary font-medium">Finalist</p>
+              <p className="text-primary font-medium">Finalist Prize</p>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Recognition for outstanding mathematical modeling and problem-solving skills</p>
             </div>
           </div>
